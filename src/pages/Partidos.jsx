@@ -54,7 +54,7 @@ export default function Partidos() {
   return (
     <div className="py-4">
       <div className="flex justify-end mb-4">
-        <button onClick={() => setModal(true)} className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+        <button onClick={() => setModal(true)} className="px-4 py-2 bg-yellow-400 text-black rounded-lg text-sm font-medium hover:bg-yellow-500 transition-colors">
           + Cargar partido
         </button>
       </div>
@@ -120,7 +120,7 @@ export default function Partidos() {
             <div className="space-y-3">
               <div>
                 <label className="text-xs text-gray-500 mb-1 block">Rival</label>
-                <input className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+                <input className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400"
                   value={form.rival} onChange={e => setForm({...form, rival: e.target.value})} placeholder="Nombre del rival" />
               </div>
               <div className="grid grid-cols-2 gap-3">
@@ -191,7 +191,7 @@ export default function Partidos() {
             </div>
             <div className="flex gap-2 mt-4">
               <button onClick={() => setModal(false)} className="flex-1 py-2 border border-gray-200 rounded-lg text-sm text-gray-600 hover:bg-gray-50">Cancelar</button>
-              <button onClick={guardar} disabled={guardando} className="flex-1 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50">
+              <button onClick={guardar} disabled={guardando} className="flex-1 py-2 bg-yellow-400 text-black rounded-lg text-sm font-medium hover:bg-yellow-500 disabled:opacity-50">
                 {guardando ? 'Guardando...' : 'Guardar partido'}
               </button>
             </div>
